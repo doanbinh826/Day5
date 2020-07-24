@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai3</title>
+</head>
+<body>
+    <script>
+        var phut = +( window.prompt("nhap so phut:"));
+        var tien = 1000;
+
+        if(phut < 0){
+            document.write("khong nhap so am , nhap lai");
+        }
+        else if( phut >= 0 ){
+            if( phut <= 50 ){
+                tien = tien + 600*phut;
+            }
+            else if ( phut <= 200){
+                tien = tien + 600*50 +400*(phut-50);
+            }
+            else if ( phut > 200){
+                tien = tien + 600*50 + 400*150 + (phut-200)*200;
+            }
+            document.write(tien);
+        }
+        else if (phut != Number){
+            document.write("khong nhap chu so, nhap lai")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+</head>
+<body>
+    <script>
+        var diemgiuaky = +(window.prompt(" nhap diem giua ky:"));
+        var diemkiemtra = +(window.prompt("nhap diem kiem tra"));
+        var diemcuoiky = +(window.prompt("nhap diem cuoi ky"));
+
+        if ( 0 >diemgiuaky || diemgiuaky >10 || diemkiemtra <0 || diemkiemtra >10 || diemcuoiky <0 || diemcuoiky>10){
+            document.write("khong nhap so am, nhap lai! ");
+        }else if( 0 <diemgiuaky && diemgiuaky <= 10 && diemkiemtra >0 && diemkiemtra <= 10 && diemcuoiky >0 && diemcuoiky<=10){
+            var xephang=( (+diemkiemtra) + (+diemgiuaky) + (+diemcuoiky) ) /3 ;
+                if (xephang >= 9){
+                    document.write("hang A");
+                } 
+                else if ( xephang >= 7){
+                    document.write("hang B");
+                } 
+                else if ( xephang >= 5){
+                    document.write("Hang C");
+                }
+                 else{
+                    document.write("hang F");
+                }
+                
+        }
+        else {
+            document.write(" khong nhap chu so, nhap lai")
+        }            
+        
+        
+    </script>
+</body>
+</html>
